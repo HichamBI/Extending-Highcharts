@@ -1,5 +1,9 @@
 (function (H) {
-    H.wrap(H.Axis.prototype, 'render', function (proceed) { });
+    H.wrap(H.Axis.prototype, 'render', function (proceed) {
+        if(this.chart.userOptions.series[0].type !== 'coloredPie') {
+            proceed.call(this);
+        }
+    });
 
     var seriesTypes = H.seriesTypes,
         merge = H.merge,

@@ -7,7 +7,7 @@ $(function () {
             showAxes: true
         },
         title: {
-            text: 'Browser market shares at a specific website, 2014'
+            text: 'Pie Chart With Custom Color Axis'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

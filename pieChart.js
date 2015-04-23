@@ -4,7 +4,8 @@ $(function () {
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
-            showAxes: true
+            showAxes: true,
+            type: 'coloredPie'
         },
         title: {
             text: 'Pie Chart With Custom Color Axis'
@@ -27,61 +28,61 @@ $(function () {
         },
         series: [
             {
-                type: 'coloredPie',
                 name: 'Browser share',
                 data: [
                     {
                         name: 'Firefox',
-                        value: 45.0,
-                        y: 45.0,
-                        colorValue: 45.0
+                        value: 65.0,
+                        y: 65.0,
+                        colorValue: 65.0
                     },
                     {
                         name: 'IE',
-                        value: 26.8,
-                        y: 26.8,
-                        colorValue: 2
+                        value: 6.8,
+                        y: 6.8,
+                        colorValue: 6.8
                     },
                     {
                         name: 'Chrome',
                         value: 12.8,
                         y: 12.8,
-                        colorValue: 3
+                        colorValue: 12.8
                     },
                     {
                         name: 'Safari',
                         value: 8.5,
                         y: 8.5,
-                        colorValue: 4
+                        colorValue: 8.5
                     },
                     {
                         name: 'Opera',
                         value: 6.2,
                         y: 6.2,
-                        colorValue: 5
+                        colorValue: 6.2
                     },
                     {
                         name: 'Others',
                         value: 0.7,
                         y: 0.7,
-                        colorValue: 6
+                        colorValue: 0.7
                     }
                 ]
             }
         ],
         colorAxis: {
             stops: [
-                [0, '#3060cf'],
-                [0.5, '#fffbbc'],
-                [0.9, '#c4463a'],
-                [1, '#c4463a']
+                [0.2, '#E50000'],
+                [0.45, '#EDC60C'],
+                [0.5, '#E2EB0F'],
+                [1, '#0BB401']
             ],
-            min: -100,
+            min: 0,
             max: 100,
             startOnTick: false,
             endOnTick: false,
             labels: {
-                format: '{value}'
+                enabled: true,
+                format: '{value} %'
             }
         }
     });
